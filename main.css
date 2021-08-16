@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: transparent;
+    animation: anime reverse linear 2s infinite forwards;
+}
+
+@keyframes anime {
+    0% {
+        background: red;
+        transition: 5s;
+    }
+    50% {
+        background: yellow;
+        transition: 5s;
+    }
+    100% {
+        background: red;
+        transition: 5s;
+    }
+}
+
+.wrapper {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.statistic {
+    width: auto;
+}
+
+.total_case_box {
+    background-color: rgb(241, 241, 101);
+    -webkit-box-shadow: 0px 0px 4px 2px #000000;
+    box-shadow: 0px 0px 4px 2px #000000;
+    border: 2px groove rgb(85, 85, 2);
+    border-radius: 10px;
+    margin: 10px 15px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.total_case_box p {
+    font-size: 3rem;
+}
+
+.Designed_by_box {
+    background-color: #800000;
+    -webkit-box-shadow: 0px 0px 3px 1px #FF0000;
+    box-shadow: 0px 0px 3px 1px #FF0000;
+    border-radius: 100px;
+    color: white;
+    margin: 1px 1px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Designed_by_box p {
+    font-size: 3rem;
+}
+
+.wrapper .box_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 1100px;
+}
+
+.box_wrapper .box {
+    background-color: rgb(241, 241, 101);
+    -webkit-box-shadow: 0px 0px 4px 2px #000000;
+    box-shadow: 0px 0px 4px 2px #000000;
+    border: 2px groove rgb(85, 85, 2);
+    border-radius: 80px;
+    margin: 10px 15px;
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.box_wrapper .box p {
+    font-size: 2.5rem;
+}
+
+
+/*Styiling the table*/
+
+table {
+    -webkit-box-shadow: 0px 0px 10px 2px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-spacing: 0;
+}
+
+tr:first-child {
+    background-color: #37474f;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+th {
+    padding: 15px 0;
+    border: none;
+    border-spacing: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(151, 4, 4);
+    color: #fafafa;
+}
+
+tr td {
+    padding: 15px 0;
+}
